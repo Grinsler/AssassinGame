@@ -7,3 +7,4 @@ c:\users\martin hileman\documents\visual studio 2012\Projects\AssassinGame\Assas
 c:\users\martin hileman\documents\visual studio 2012\Projects\AssassinGame\AssassinGame\obj\Debug\AssassinGame.g.resources
 c:\users\martin hileman\documents\visual studio 2012\Projects\AssassinGame\AssassinGame\obj\Debug\AssassinGame.Properties.Resources.resources
 c:\users\martin hileman\documents\visual studio 2012\Projects\AssassinGame\AssassinGame\obj\Debug\AssassinGame.csproj.GenerateResource.Cache
+C:\Users\Martin Hileman\Documents\GitHub\AssassinGame\AssassinGame\bin\Debug\AssassinGame.exe.config
