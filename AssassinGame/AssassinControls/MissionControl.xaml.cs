@@ -24,5 +24,10 @@ namespace AssassinGame.AssassinControls
         {
             InitializeComponent();
         }
+
+        private void ButtonChoice(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

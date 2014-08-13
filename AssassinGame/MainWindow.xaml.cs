@@ -26,16 +26,29 @@ namespace AssassinGame
         Button choice2 = new Button();
         Button choice3 = new Button();
 
+        AssassinControls.MissionControl missionControl = new AssassinControls.MissionControl();
+
+
         public MainWindow()
         {
             InitializeComponent();
-            MissionGuiSetup();
-
+            //MissionGuiSetup();
+            MainStackPanel.Children.Add(missionControl);
+            missionControl.Button_Choice1.Content = "hello";
         }
-
+        public void miissionDialog(string setup,string but1, string but2, string but3)
+        {
+            missionControl.Label_SetUp.Content = setup;
+            missionControl.Button_Choice1.Content = but1;
+            missionControl.Button_Choice2.Content = but2;
+            missionControl.Button_Choice3.Content = but3;
+        }
         public void MissionGuiSetup()
         {
             MainStackPanel.Children.Clear();
+
+            grid1.Height = (double)800;
+            grid1.Width = (double)600;
            
             System.Windows.Thickness MarginThickness = new Thickness();
             MarginThickness.Equals(10);
@@ -51,6 +64,10 @@ namespace AssassinGame
             choice1.Visibility = System.Windows.Visibility.Visible;
             choice2.Visibility = System.Windows.Visibility.Visible;
             choice3.Visibility = System.Windows.Visibility.Visible;
+
+            choice1.VerticalAlignment = System.Windows.VerticalAlignment.Center;
+            choice2.VerticalAlignment = System.Windows.VerticalAlignment.Center;
+            choice3.VerticalAlignment = System.Windows.VerticalAlignment.Center;
 
             var col = new ColumnDefinition();
             col.Width = new GridLength(1, GridUnitType.Star);
@@ -81,11 +98,13 @@ namespace AssassinGame
             Grid.SetRow(choice1, 1);
             Grid.SetRow(choice2, 2);
             Grid.SetRow(choice3, 3);
+
+            MainStackPanel.Children.Add(grid1);
         }
 
         public void ButtonChoice(object sender, RoutedEventArgs e)
         {
-            
+            //not used - new method in usercontrol. may use later if we need to overwrite using missionguisetup method
         } 
         
     }
