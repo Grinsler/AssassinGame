@@ -53,8 +53,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AssassinControls\MissionControl.xaml.cs">
+      <DependentUpon>MissionControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sceens\DrugLord.cs" />
     <Compile Include="Sceens\Mission.cs" />
+    <Page Include="AssassinControls\MissionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

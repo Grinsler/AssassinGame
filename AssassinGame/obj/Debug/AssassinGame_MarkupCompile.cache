@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Martin Hileman\Documents\Visual Studio 2012\Projects\AssassinGame\AssassinGame\obj\Debug\
+C:\Users\Martin Hileman\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\
 AssassinGame
 none
 false
 DEBUG;TRACE
-C:\Users\Martin Hileman\Documents\Visual Studio 2012\Projects\AssassinGame\AssassinGame\App.xaml
-11151548125
+C:\Users\Martin Hileman\Documents\GitHub\AssassinGame\AssassinGame\App.xaml
+22069977062
 
-6-744867023
+81687652672
 12-114506869
-MainWindow.xaml;
+AssassinControls\MissionControl.xaml;MainWindow.xaml;
 
 False
 

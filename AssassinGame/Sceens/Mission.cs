@@ -8,19 +8,13 @@ using System.Windows;
 namespace AssassinGame.Sceens
 {
     public class Mission
-    {
-        string[] Choices;
-
+    { 
         public string Property_Choice1 { get; private set; }
         public string Property_Choice2 { get; private set; }
         public string Property_Choice3 { get; private set; }
         public string Property_Setup { get; private set; }
 
-        public Mission (string[] choices)
-	    {
-            Choices = choices;
-	    }
-        public int Interaction1()
+        public int Interaction(string[] Choices)
         {
             int userchoice = 0;
 
@@ -29,7 +23,6 @@ namespace AssassinGame.Sceens
             Property_Choice2 = Choices[2];
             Property_Choice3 = Choices[3];
 
-            //giggety
             return 1;
         }
     }

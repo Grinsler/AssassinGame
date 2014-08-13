@@ -1,45 +1,9 @@
 ﻿<Window x:Class="AssassinGame.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="700" Width="625">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
-            <ColumnDefinition Width="1*" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="3*" />
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="1*" />
-        </Grid.RowDefinitions>
-        <Label x:Name="Label_SetUp"
-               Grid.ColumnSpan="3"
-               Grid.Column="0"
-               Grid.Row="0"
-               VerticalAlignment="Center"
-               HorizontalAlignment="Center"/>
-        <Label x:Name="Label_Choice1"
-               Grid.Column="0"
-               Grid.Row="1"/>
-        <Label x:Name="Label_Choice2"
-               Grid.Column="1"
-               Grid.Row="1"/>
-        <Label x:Name="Label_Choice3"
-               Grid.Column="2"
-               Grid.Row="1"/>
-        <Button x:Name="Label_Next"
-               Content="Next"
-               Grid.Column="2"
-               Grid.Row="2"
-               FontSize="18"
-               VerticalAlignment="Center"
-               HorizontalAlignment="Center"/>
-        <ComboBox x:Name="combo1"
-                  Grid.ColumnSpan="2"
-                  Grid.Column="0"
-                  Grid.Row="2"
-                  Margin="4"></ComboBox>
-        
-    </Grid>
+        xmlns:con="clr-namespace:AssassinGame.AssassinControls"
+        Title="AssassinMission" Height="800" Width="600">
+    <StackPanel x:Name="MainStackPanel">
+        <con:MissionControl />
+    </StackPanel>
 </Window>
