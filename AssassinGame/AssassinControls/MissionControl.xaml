@@ -29,19 +29,19 @@
                Grid.ColumnSpan="3"
                Grid.Row="1"
                 Margin="10"
-                Click="ButtonChoice"/>
+                Click="ButtonChoice1"/>
         <Button x:Name="Button_Choice2"
                Grid.Column="0"
                 Grid.ColumnSpan="3"
                Grid.Row="2"
                 Margin="10"
-                Click="ButtonChoice"/>
+                Click="ButtonChoice2"/>
         <Button x:Name="Button_Choice3"
                Grid.Column="0"
                 Grid.ColumnSpan="3"
                Grid.Row="3"
                 Margin="10"
-                Click="ButtonChoice"/>
+                Click="ButtonChoice3"/>
 
     </Grid>
 </UserControl>

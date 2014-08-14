@@ -56,8 +56,8 @@
     <Compile Include="AssassinControls\MissionControl.xaml.cs">
       <DependentUpon>MissionControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Sceens\DrugLord.cs" />
-    <Compile Include="Sceens\Mission.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Sceens\Mission_DrugLord.cs" />
     <Page Include="AssassinControls\MissionControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -101,6 +101,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\FirstMission\AngryJames.jpg" />
+    <Resource Include="Images\FirstMission\CharsmaSuccess.jpg" />
+    <Resource Include="Images\FirstMission\DeadJames.jpg" />
+    <Resource Include="Images\FirstMission\DexerityJump.jpg" />
+    <Resource Include="Images\FirstMission\DrugLordAndFriend.jpg" />
+    <Resource Include="Images\FirstMission\DrugLordAndFriendDead.jpg" />
+    <Resource Include="Images\FirstMission\DrugLordAndFriendSeperate.jpg" />
+    <Resource Include="Images\FirstMission\DrugLordAppearance.jpg" />
+    <Resource Include="Images\FirstMission\DrugLordDead.jpg" />
+    <Resource Include="Images\FirstMission\DrugLordKnows.jpg" />
+    <Resource Include="Images\FirstMission\DrugLordSuprised.jpg" />
+    <Resource Include="Images\FirstMission\DrugLordUncertain.jpg" />
+    <Resource Include="Images\FirstMission\DrugLordUnspecting.jpg" />
+    <Resource Include="Images\FirstMission\Dumpster.jpg" />
+    <Resource Include="Images\FirstMission\FightMe.jpg" />
+    <Resource Include="Images\secretary.jpg" />
+    <Resource Include="Images\FirstMission\YouAreDead.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
