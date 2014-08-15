@@ -12,13 +12,12 @@ namespace AssassinGame.Sceens
     {
         
         Player Player = new Player();
+        MissionControl mc = new MissionControl();
 
         public Mission_DrugLord(Player p)
         {
             Player = p;
         }
-        
-        
-         
+ 
     }
 }

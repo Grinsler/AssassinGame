@@ -2,11 +2,13 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:con="clr-namespace:AssassinGame.AssassinControls"
-        Title="AssassinMission" Height="650" Width="850">
+        Title="International Secret Intelligence Service: Kawaii no Desu" Height="635" Width="810"
+        ResizeMode="NoResize">
     <StackPanel x:Name="MainStackPanel"
                 Background="Black">
         <con:MissionControl
             Height="600"
             Width="800"/>
+
     </StackPanel>
 </Window>
