@@ -5,8 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              Height="600" Width="800">
-    <Grid x:Name="MainGrid"
-          Background="Black">
+    <Grid x:Name="MainGrid">
+        <Grid.Background>
+            <ImageBrush x:Name="TheBackground" ImageSource="/Images/Front of Building.jpg" />
+        </Grid.Background>
         <Grid.Resources>
             <Style TargetType="Button">
                 <Setter Property="Foreground" Value="White" />
@@ -32,10 +34,10 @@
             <RowDefinition Height="1*" />
 
         </Grid.RowDefinitions>
-        <Image x:Name="TheBackground"
+        <!--<Image x:Name="TheBackground"
             Source="/Images/Front of Building.jpg"
             Grid.ColumnSpan="3"
-            Grid.RowSpan="4"/>
+            Grid.RowSpan="4"/>-->
         <Rectangle Fill="Gray"
                    Grid.ColumnSpan="3"
                    Grid.Row="1"

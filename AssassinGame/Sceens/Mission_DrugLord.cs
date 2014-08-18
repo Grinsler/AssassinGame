@@ -17,7 +17,13 @@ namespace AssassinGame.Sceens
         public Mission_DrugLord(Player p)
         {
             Player = p;
+            mc.UserChoice = 0;
+            mc.MissionDialog("dialogue dialogue dialogue dialogue dialogue dialogue dialogue dialogue dialogue");
+            mc.MissionDialog("dialogue dialogue dialogue dialogue dialogue dialogue dialogue dialogue dialogue");
+
+            mc.MissionDialog("Choose 1 of the following", "jump", "confront", "sweettalk");
         }
- 
+        
+        
     }
 }

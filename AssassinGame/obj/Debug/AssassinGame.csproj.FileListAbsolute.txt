@@ -41,3 +41,20 @@ C:\Users\Daniel Taylor\Documents\Visual Studio 2012\APPDEV PROJECT\AssassinGame\
 C:\Users\Daniel Taylor\Documents\Visual Studio 2012\APPDEV PROJECT\AssassinGame\AssassinGame\obj\Debug\AssassinGame.g.resources
 C:\Users\Daniel Taylor\Documents\Visual Studio 2012\APPDEV PROJECT\AssassinGame\AssassinGame\obj\Debug\AssassinGame.Properties.Resources.resources
 C:\Users\Daniel Taylor\Documents\Visual Studio 2012\APPDEV PROJECT\AssassinGame\AssassinGame\obj\Debug\AssassinGame.csproj.GenerateResource.Cache
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\bin\Debug\AssassinGame.exe.config
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\AssassinGame.exe
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\AssassinGame.pdb
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\AssassinGame.csprojResolveAssemblyReference.cache
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\AssassinControls\MissionControl.baml
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\AssassinControls\MissionControl.g.cs
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\MainWindow.g.cs
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\App.g.cs
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\AssassinGame_MarkupCompile.cache
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\AssassinGame_MarkupCompile.lref
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\bin\Debug\AssassinGame.exe
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\bin\Debug\AssassinGame.pdb
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\MainWindow.baml
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\AssassinGame.g.resources
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\AssassinGame.Properties.Resources.resources
+C:\Users\Mitchel Mendez\Documents\GitHub\AssassinGame\AssassinGame\obj\Debug\AssassinGame.csproj.GenerateResource.Cache

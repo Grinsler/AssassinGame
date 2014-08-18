@@ -31,12 +31,13 @@ namespace AssassinGame.AssassinControls
             InitializeComponent();
         }
 
+        //====================================Buttons====================================
         private void ButtonChoice1(object sender, RoutedEventArgs e)
         {
             UserChoice = 1;
             imgsrc = new Uri("pack://application:,,,/Images/FirstMission/AngryJames.jpg");
             bmp = new BitmapImage(imgsrc);
-            TheBackground.Source = bmp;
+            TheBackground.ImageSource = bmp;
         }
         private void ButtonChoice2(object sender, RoutedEventArgs e)
         {
@@ -46,6 +47,8 @@ namespace AssassinGame.AssassinControls
         {
             UserChoice = 3;
         }
+        //==============================================================================
+
 
         public void MissionDialog(string setup, string but1, string but2, string but3)
         {
@@ -56,6 +59,16 @@ namespace AssassinGame.AssassinControls
             
         }
 
+        public void MissionDialog(string setup)
+        {
+            Label_SetUp.Content = setup;
+            Button_Choice1.Visibility = Visibility.Hidden;
+            Button_Choice2.Content = "Next";
+            Button_Choice3.Visibility = Visibility.Hidden;
+            
+        }
+
+        //=================================Button Style===================================
         private void Button_Choice3_MouseEnter_1(object sender, MouseEventArgs e)
         {
             if (this.Button_Choice3.Foreground.Equals(Brushes.Black))
