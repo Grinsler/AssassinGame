@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using AssassinGame.Models;
+using System.Windows.Media.Animation;
 
 namespace AssassinGame.AssassinControls
 {
@@ -31,14 +32,40 @@ namespace AssassinGame.AssassinControls
             InitializeComponent();
             Button_Choice1.Content = "Do it!";
         }
+        //=========================Image Transition Demo=================================
+        private void ImageFadeOut_Completed(object sender, EventArgs e)
+        {
+            imgsrc = new Uri("pack://application:,,,/Images/FirstMission/AngryJames.jpg");
+            bmp = new BitmapImage(imgsrc);
+            TheBackground.Source = bmp;
+            Storyboard SFadeIn = new Storyboard();
+            DoubleAnimation FadeIn = new DoubleAnimation();
+            FadeIn.From = 0.0;
+            FadeIn.To = 1.0;
+            FadeIn.Duration = new Duration(TimeSpan.FromSeconds(.5));
+            SFadeIn.Children.Add(FadeIn);
+            Storyboard.SetTargetName(FadeIn, TheBackground.Name);
+            Storyboard.SetTargetProperty(FadeIn, new PropertyPath(Image.OpacityProperty));
+            SFadeIn.Begin(this);
+        }
+        //===============================================================================
 
         //====================================Buttons====================================
         private void ButtonChoice1(object sender, RoutedEventArgs e)
         {
             UserChoice = 1;
-            imgsrc = new Uri("pack://application:,,,/Images/FirstMission/AngryJames.jpg");
-            bmp = new BitmapImage(imgsrc);
-            TheBackground.Source = bmp;
+            Storyboard SFadeOut = new Storyboard();
+            SFadeOut.Completed += new EventHandler(ImageFadeOut_Completed);
+
+            DoubleAnimation FadeOut = new DoubleAnimation();
+            FadeOut.From = 1.0;
+            FadeOut.To = 0.0;
+            FadeOut.Duration = new Duration(TimeSpan.FromSeconds(.5));
+            SFadeOut.Children.Add(FadeOut);
+            Storyboard.SetTargetName(FadeOut, TheBackground.Name);
+            Storyboard.SetTargetProperty(FadeOut, new PropertyPath(Image.OpacityProperty));
+
+            SFadeOut.Begin(TheBackground);
         }
         private void ButtonChoice2(object sender, RoutedEventArgs e)
         {
