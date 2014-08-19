@@ -35,12 +35,12 @@ namespace AssassinGame.AssassinControls
         //=========================Image Transition Demo=================================
         private void ImageFadeOut_Completed(object sender, EventArgs e)
         {
-            imgsrc = new Uri("pack://application:,,,/Images/FirstMission/AngryJames.jpg");
+            imgsrc = new Uri("pack://application:,,,/Images/secretary.jpg");
             bmp = new BitmapImage(imgsrc);
             TheBackground.Source = bmp;
             Storyboard SFadeIn = new Storyboard();
             DoubleAnimation FadeIn = new DoubleAnimation();
-            FadeIn.From = 0.0;
+            FadeIn.From = 0.0;                                                       //THIS METHOD WILL REQUIRE CHANGING OF THE IMAGE PATH ACCORDINGLY, BUT THAT'S IT.
             FadeIn.To = 1.0;
             FadeIn.Duration = new Duration(TimeSpan.FromSeconds(.5));
             SFadeIn.Children.Add(FadeIn);
@@ -57,7 +57,7 @@ namespace AssassinGame.AssassinControls
             Storyboard SFadeOut = new Storyboard();
             SFadeOut.Completed += new EventHandler(ImageFadeOut_Completed);
 
-            DoubleAnimation FadeOut = new DoubleAnimation();
+            DoubleAnimation FadeOut = new DoubleAnimation();                        //THIS METHOD CAN BE IMPLEMENTED ANYWHERE NECESSARY -- IT ONLY FADES OUT THE CURRENT IMAGE
             FadeOut.From = 1.0;
             FadeOut.To = 0.0;
             FadeOut.Duration = new Duration(TimeSpan.FromSeconds(.5));
