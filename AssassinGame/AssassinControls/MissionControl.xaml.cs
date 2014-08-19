@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using AssassinGame.Models;
 
 namespace AssassinGame.AssassinControls
 {
@@ -57,6 +57,15 @@ namespace AssassinGame.AssassinControls
             Button_Choice2.Content = but2;
             Button_Choice3.Content = but3;
             
+        }
+
+        public void MissionDialog(string setup, string but1, string but2)
+        {
+            Label_SetUp.Content = setup;
+            Button_Choice1.Content = but1;
+            Button_Choice2.Content = but2;
+            Button_Choice3.Visibility = Visibility.Hidden;
+
         }
 
         public void MissionDialog(string setup)
