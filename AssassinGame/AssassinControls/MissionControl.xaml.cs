@@ -29,6 +29,7 @@ namespace AssassinGame.AssassinControls
         public MissionControl()
         {
             InitializeComponent();
+            Button_Choice1.Content = "Do it!";
         }
 
         //====================================Buttons====================================
@@ -37,7 +38,7 @@ namespace AssassinGame.AssassinControls
             UserChoice = 1;
             imgsrc = new Uri("pack://application:,,,/Images/FirstMission/AngryJames.jpg");
             bmp = new BitmapImage(imgsrc);
-            TheBackground.ImageSource = bmp;
+            TheBackground.Source = bmp;
         }
         private void ButtonChoice2(object sender, RoutedEventArgs e)
         {

@@ -6,13 +6,11 @@
              mc:Ignorable="d" 
              Height="600" Width="800">
     <Grid x:Name="MainGrid">
-        <Grid.Background>
-            <ImageBrush x:Name="TheBackground" ImageSource="/Images/Front of Building.jpg" />
-        </Grid.Background>
         <Grid.Resources>
             <Style TargetType="Button">
                 <Setter Property="Foreground" Value="White" />
                 <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="Focusable" Value="False"/>
                 <Setter Property="Margin" Value="10"/>
                 <Setter Property="Grid.Column" Value="0"/>
                 <Setter Property="Grid.ColumnSpan" Value="3"/>
@@ -34,10 +32,10 @@
             <RowDefinition Height="1*" />
 
         </Grid.RowDefinitions>
-        <!--<Image x:Name="TheBackground"
+        <Image x:Name="TheBackground"
             Source="/Images/Front of Building.jpg"
             Grid.ColumnSpan="3"
-            Grid.RowSpan="4"/>-->
+            Grid.RowSpan="4"/>
         <Rectangle Fill="Gray"
                    Grid.ColumnSpan="3"
                    Grid.Row="1"
@@ -51,13 +49,13 @@
                FontSize="20"
                Content="Secretary: I'm saying the things."
                Padding="20,0,0,0"
-               Visibility="Visible"/>
+               Visibility="Hidden"/>
         <Button x:Name="Button_Choice1"
                Grid.Row="1"
                 Click="ButtonChoice1"
                 MouseEnter="Button_Choice1_MouseEnter_1"
                 MouseLeave="Button_Choice1_MouseEnter_1"
-                Visibility="Hidden"
+                Visibility="Visible"
                 Content=""/>
         <Button x:Name="Button_Choice2"
                Grid.Row="2"

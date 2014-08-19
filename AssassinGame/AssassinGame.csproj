@@ -123,7 +123,9 @@
     <Resource Include="Images\FirstMission\YouAreDead.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Front of Building.jpg" />
+    <Resource Include="Images\Front of Building.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
