@@ -65,11 +65,12 @@ namespace AssassinGame.AssassinControls
             Storyboard.SetTargetName(FadeOut, TheBackground.Name);
             Storyboard.SetTargetProperty(FadeOut, new PropertyPath(Image.OpacityProperty));
 
-            SFadeOut.Begin(TheBackground);
+            SFadeOut.Begin(this);
         }
         private void ButtonChoice2(object sender, RoutedEventArgs e)
         {
             UserChoice = 2;
+
         }
         private void ButtonChoice3(object sender, RoutedEventArgs e)
         {
