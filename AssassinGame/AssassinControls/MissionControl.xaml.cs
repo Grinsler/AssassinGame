@@ -111,7 +111,7 @@ namespace AssassinGame.AssassinControls
         {
             if (this.Button_Choice3.Foreground.Equals(Brushes.Black))
             {
-                this.Button_Choice3.Foreground = (Brushes.Magenta);
+                this.Button_Choice3.Foreground = (Brushes.White);
             }
             else
             {
